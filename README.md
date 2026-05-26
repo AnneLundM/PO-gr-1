@@ -28,8 +28,11 @@ https://gowala-t3pes.ondigitalocean.app/
 ## Scrum-rammen
 
 - **Product Owner** — underviseren, der ejer prioriteringen og kommunikerer Product Goal
+- Anne  (lære)
 - **Scrum Master** — se [Scrum-team.md](Scrum-team.md)
+- Pia
 - **Developers** — gruppens medlemmer, se [Scrum-team.md](Scrum-team.md)
+Anne, Nikolej
 
 Opgaverne skal styres som issues i jeres GitHub Project.
 
