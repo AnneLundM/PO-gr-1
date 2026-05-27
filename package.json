@@ -1,0 +1,17 @@
+{
+  "name": "po-gr-1",
+  "version": "1.0.0",
+  "description": "Dette repository skal indholde jeres gruppearbejde i faget **Projektorganisering**. I skal arbejde efter Scrum-metoden på et udviklingsprojekt for **Gowala Farms** — en hjemmeside, der præsenterer gårdens produkter, værdier og historie.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./public/css/output.css  --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./public/css/output.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}
