@@ -8,6 +8,10 @@
 		scroll-behavior: smooth;
 	}
 	body {
-		font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+		font-family: "Frank Ruhl Libre", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 	}
+}
+
+@theme {
+  --font-sans: "Frank Ruhl Libre", serif;
 }

@@ -1,9 +1,4 @@
-import { hero } from "./componenets/hero.js";
+import { ProductList } from "./components/productList.js";
 
 
-
-
-
-
-
-hero()
+ProductList();
