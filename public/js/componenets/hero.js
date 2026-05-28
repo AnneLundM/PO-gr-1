@@ -1,19 +1,37 @@
-const heroContainer = document.querySelector('.heroSec')
+const slides = document.querySelectorAll('.slide');
+  let cur = 0;
+  let animating = false;
 
-export const hero = () => {
-    if(!heroContainer){
-        return;
-    }
+  slides[cur].style.zIndex = 1;
 
-    const heroTemplate = () => {
-        return `
-             <div class="hero hero__img__overlay">
-        <div class="hero__titel">At lege er at leve</div>
-        <div class="hero__text">Her hos os har vi et stort udvalg af legetøj i høj kvalitet</div>
-    </div>
-            
-        `
-    }
+  function go(n) {
+    if (animating) return;
+    animating = true;
+    const next = (n + slides.length) % slides.length;
 
-    heroContainer.insertAdjacentHTML('beforeend', heroTemplate())
-}
+    slides[next].style.zIndex = 2;
+    slides[next].classList.remove('opacity-0');
+    slides[next].classList.add('opacity-100');
+
+    setTimeout(() => {
+      slides[cur].classList.remove('opacity-100');
+      slides[cur].classList.add('opacity-0');
+      slides[cur].style.zIndex = 0;
+      slides[next].style.zIndex = 1;
+      cur = next;
+      animating = false;
+    }, 1000);
+  }
+
+  let timer = setInterval(() => go(cur + 1), 4000);
+
+  document.querySelector('.nav-prev').addEventListener('click', () => {
+    clearInterval(timer);
+    go(cur - 1);
+    timer = setInterval(() => go(cur + 1), 4000);
+  });
+  document.querySelector('.nav-next').addEventListener('click', () => {
+    clearInterval(timer);
+    go(cur + 1);
+    timer = setInterval(() => go(cur + 1), 4000);
+  });
