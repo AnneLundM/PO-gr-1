@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@layer base {
+	:root {
+		--hero-img: url("/public/assets/img/hero.png");
+	}
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		font-family: "Raleway", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+	}
+}
