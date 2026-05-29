@@ -6,12 +6,16 @@
     <link rel="stylesheet" href="./css/output.css" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap"
+      rel="stylesheet"    />
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
 
     <title>Gowala Farm</title>
 
@@ -20,30 +24,76 @@
   </head>
   <body>
     <main>
-     
-        <!------------ Hero Section --------->
+      <!------------ Hero Section --------->
 
-  <div class="relative w-full h-[405px] max-h-[405px] overflow-hidden bg-black">
+      <div
+        class="relative w-full h-101.25 max-h-101.25 overflow-hidden bg-black mb-20"
+      >
+        <div class="absolute inset-0 z-10">
+          <div
+            class="slide absolute inset-0 opacity-100 transition-opacity duration-1000 bg-cover bg-center z-10"
+            style="
+              background-image: url(&quot;../assets/headerslider/02.jpg&quot;);
+            "
+          ></div>
+          <div
+            class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 bg-cover bg-center z-10"
+            style="
+              background-image: url(&quot;../assets/headerslider/03.jpg&quot;);
+            "
+          ></div>
+          <div
+            class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 bg-cover bg-center z-10"
+            style="
+              background-image: url(&quot;../assets/headerslider/04.jpg&quot;);
+            "
+          ></div>
+        </div>
 
-    <div class="absolute inset-0 z-10">
-      <div class="slide absolute inset-0 opacity-100 transition-opacity duration-1000 bg-cover bg-center z-10" style="background-image:url('../assets/headerslider/02.jpg')"></div>
-      <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 bg-cover bg-center z-10" style="background-image:url('../assets/headerslider/03.jpg')"></div>
-      <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000 bg-cover bg-center z-10" style="background-image:url('../assets/headerslider/04.jpg')"></div>
-    </div>
+        <div class="absolute inset-0"></div>
 
-    <div class="absolute inset-0 "></div>
+        <div
+          class="absolute top-0 left-0 right-0 bottom-1/2 flex flex-col items-center justify-center gap-2 text-center px-20 z-20"
+        >
+          <h1 class="text-5xl font-bold text-lime-500 tracking-wide m-0">
+            Gowala Farms
+          </h1>
+          <p class="text-lg text-lime-500 m-0">The complete Milk</p>
+        </div>
 
-    <div class="absolute top-0 left-0 right-0 bottom-1/2 flex flex-col items-center justify-center gap-2 text-center px-20 z-20">
-      <h1 class="text-5xl font-bold text-lime-500 tracking-wide m-0">Gowala Farms</h1>
-      <p class="text-lg text-lime-500 m-0">The complete Milk</p>
-    </div>
+        <div
+          class="absolute top-1/2 left-0 right-0 bottom-0 flex items-center justify-center z-20"
+        >
+          <button
+            class="px-9 py-3 bg-lime-500 border-2 border-lime-500 text-white text-base rounded-full cursor-pointer hover:bg-white hover:text-gray-900 transition-colors duration-200"
+          >
+            Læs mere
+          </button>
+        </div>
 
-    <div class="absolute top-1/2 left-0 right-0 bottom-0 flex items-center justify-center z-20">
-      <button class="px-9 py-3 bg-lime-500 border-2 border-lime-500 text-white text-base rounded-full cursor-pointer hover:bg-white hover:text-gray-900 transition-colors duration-200">
-        Læs mere
-      </button>
-    </div>
-
+        <button
+          class="nav-prev absolute left-3 top-1/2 -translate-y-1/2 bg-transparent border-none cursor-pointer p-0 flex items-center justify-center z-20"
+          aria-label="Forrige"
+        >
+          <svg
+            style="
+              min-width: 20px;
+              max-width: 47px;
+              width: 47px;
+              min-height: 37px;
+              max-height: 87px;
+              height: 87px;
+            "
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#84cc16"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
         <button
           class="nav-next absolute right-3 top-1/2 -translate-y-1/2 bg-transparent border-none cursor-pointer p-0 flex items-center justify-center z-20"
           aria-label="Næste"
@@ -70,18 +120,17 @@
       </div>
       <!------------ Hero Section END ---------->
 
-
       <!------------ Products Section START ------------->
 
       <section class="p-4 flex flex-col gap-4">
         <article class="p-4" id="intro-products-id"></article>
-        <div class="p-4 flex flex-wrap gap-4 justify-center items-center" id="product-list-id"></div>
+        <div
+          class="p-4 flex flex-wrap gap-4 justify-center items-center"
+          id="product-list-id"
+        ></div>
       </section>
 
       <!------------ Products Section END ------------->
-
-
-
     </main>
     <script src="http://cdn.tailwindcss.com"></script>
   </body>
